@@ -1254,7 +1254,7 @@ where
     }
 
     // Get ranging data.
-    let range_results: RangeResults = get_device_results(dev, i2c, DeviceResultsLevel::FULL)?;
+    let range_results: RangeResults = get_device_results(dev, i2c, DeviceResultsLevel::SYSTEM_RESULTS)?;
 
     rmd.stream_count = range_results.stream_count;
 
